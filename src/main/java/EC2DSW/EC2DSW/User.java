@@ -13,7 +13,7 @@ public class User {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 
-	private String name;
+	private String nombre;
 
 	private Integer creditos;
 
@@ -26,11 +26,11 @@ public class User {
 	}
 
 	public String getName() {
-		return name;
+		return nombre;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public Integer getCreditos() {
