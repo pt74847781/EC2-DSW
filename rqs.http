@@ -1,33 +1,31 @@
-GET https://ec2-dsw.onrender.com/demo/all
+GET https://ec2-dsw.onrender.com/curso/listarhttp
 
 ###
 
-POST https://ec2-dsw.onrender.com/demo/add
+POST https://ec2-dsw.onrender.com/api/curso/nuevohttp
 Content-Type: application/x-www-form-urlencoded
 
-name=ariel123
-&email=otroalumno@idat.edu.pe
+name=ABEL NUÑEZ CRUZ
+&creditos= 6
 ###
 
-GET http://localhost:8080/demo/ver/2
 
-###
 
-PUT http://localhost:8080/demo/edit
+PUT https://ec2-dsw.onrender.com/demo/edit
 Content-Type: application/x-www-form-urlencoded
 
 id=2
 &name=Mateo IDAT
-&email=correoidatdemateo@idat.edu.pe
+&creditos=7
 
 ###
 
-DELETE http://localhost:8080/demo/del
+DELETE https://ec2-dsw.onrender.com/demo/del
 Content-Type: application/x-www-form-urlencoded
 
 id=1
 
 ###
 
-GET http://localhost:8080/demo/get/report
+
 
