@@ -28,7 +28,7 @@ public class ApiController {
 	// @Autowired
   	// private JdbcTemplate jdbcTemplate;
 
-	@PostMapping(path="/nuevo") // Map ONLY POST Requests
+	@PostMapping(path="/add") // Map ONLY POST Requests
 	public @ResponseBody String addNewUser (@RequestParam String name
 			, @RequestParam Integer creditos) {
 		User n = new User();
