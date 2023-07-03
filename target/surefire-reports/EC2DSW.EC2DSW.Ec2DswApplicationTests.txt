@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: EC2DSW.EC2DSW.Ec2DswApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.95 s - in EC2DSW.EC2DSW.Ec2DswApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.507 s - in EC2DSW.EC2DSW.Ec2DswApplicationTests

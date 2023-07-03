@@ -1,0 +1,33 @@
+GET https://ec2-dsw.onrender.com/demo/all
+
+###
+
+POST https://ec2-dsw.onrender.com/demo/add
+Content-Type: application/x-www-form-urlencoded
+
+name=ariel123
+&email=otroalumno@idat.edu.pe
+###
+
+GET http://localhost:8080/demo/ver/2
+
+###
+
+PUT http://localhost:8080/demo/edit
+Content-Type: application/x-www-form-urlencoded
+
+id=2
+&name=Mateo IDAT
+&email=correoidatdemateo@idat.edu.pe
+
+###
+
+DELETE http://localhost:8080/demo/del
+Content-Type: application/x-www-form-urlencoded
+
+id=1
+
+###
+
+GET http://localhost:8080/demo/get/report
+
