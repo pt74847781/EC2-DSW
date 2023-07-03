@@ -1,31 +1,50 @@
-GET https://ec2-dsw.onrender.com/curso/listarhttp
+@subdominio = ec2-dsw
+
+##############################
+# Requests SIN base de datos #
+##############################
 
 ###
+# 1: Mostrar su código IDAT y su nombre en el siguiente formato: CÓDIGO - NOMBRE
+GET https://{{subdominio}}.onrender.com/
 
-POST https://ec2-dsw.onrender.com/api/curso/nuevohttp
+###
+# 2: Mostrar su código IDAT
+GET https://{{subdominio}}.onrender.com/idat/codigo
+
+###
+# 3: Mostrar su nombre completo
+GET https://{{subdominio}}.onrender.com/idat/nombre-completo
+
+
+
+##############################################
+#         Requests CON base de datos         #
+##############################################
+# Tabla: cursos:                             #
+#   - id: int (strategy=GenerationType.AUTO) #
+#   - nombre: string                         #
+#   - creditos: int                          #
+##############################################
+
+
+###
+# 4: Listar cursos
+GET https://{{subdominio}}.onrender.com/api/listar HTTP/1.1
+
+###
+# 5: Nuevo Curso
+POST https://{{subdominio}}.onrender.com/api/nuevo HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-name=ABEL NUÑEZ CRUZ
-&creditos= 6
-###
-
-
-
-PUT https://ec2-dsw.onrender.com/demo/edit
-Content-Type: application/x-www-form-urlencoded
-
-id=2
-&name=Mateo IDAT
-&creditos=7
+nombre=DSW1
+&creditos=2
 
 ###
-
-DELETE https://ec2-dsw.onrender.com/demo/del
+# 6: Eliminar Curso
+DELETE https://{{subdominio}}.onrender.com/api/eliminar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 id=1
-
-###
-
 
 

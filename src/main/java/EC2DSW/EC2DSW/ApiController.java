@@ -28,7 +28,7 @@ public class ApiController {
 	// @Autowired
   	// private JdbcTemplate jdbcTemplate;
 
-	@PostMapping(path="/curso/nuevohttp") // Map ONLY POST Requests
+	@PostMapping(path="/nuevo") // Map ONLY POST Requests
 	public @ResponseBody String addNewUser (@RequestParam String name
 			, @RequestParam Integer creditos) {
 		User n = new User();
@@ -38,7 +38,7 @@ public class ApiController {
 		return "Saved";
 	}
 
-	@DeleteMapping(path="/curso/eliminarhttp")
+	@DeleteMapping(path="/eliminar")
 	public @ResponseBody String delUser (@RequestParam Integer id) {
 		User n = new User();
 		n.setId(id);
@@ -58,7 +58,7 @@ public class ApiController {
 	}
 
 
-	@GetMapping(path="/curso/listarhttp")
+	@GetMapping(path="/listar")
 	public @ResponseBody Iterable<User> getAllUsers() {
 		return userRepository.findAll();
 	}
